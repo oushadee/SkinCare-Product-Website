@@ -1,0 +1,225 @@
+/* body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.full-screen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* You can set a background color if you want */
+
+
+/* .full-screen-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* You can use "contain" or "cover" depending on how you want the image to fit */
+    .container-fluid{
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: large;
+        font-family:  "New York",Iowan Old Style,Apple Garamond,Baskerville,Times New Roman,Droid Serif,Times,Source Serif Pro,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+        background-color:black;
+    
+        
+    }
+    
+    
+    .nav-item .nav-link{
+        color:pink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        margin-right: 40px;
+       
+    }
+    
+    .nav-item:hover{
+        text-decoration: underline 1.5px palevioletred;
+        color: palevioletred;
+        
+    }
+
+.ourstory{
+    background-color: aquamarine;
+    height: 400px;
+    background-image: url('/images/cosmetic2.jpg');
+    background-size: cover; /* Optional: Adjust the size of the background image */
+    background-repeat: no-repeat; /* Optional: Prevent the background image from repeating */
+    margin-top: 60px;
+    color: white;
+    font-weight: bold;
+    font-family: "New York",Iowan Old Style,Apple Garamond,Baskerville,Times New Roman,Droid Serif,Times,Source Serif Pro,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    
+    
+}
+
+.storyhead{
+    text-align: center;
+    padding: 40px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 233, 233);
+    width: 1500px;
+    margin-top: 50px;
+    border: 2px rgb(218, 217, 217);
+    
+}
+
+.productContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.prodctTitle{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 200px;
+    font-family: "New York",Iowan Old Style,Apple Garamond,Baskerville,Times New Roman,Droid Serif,Times,Source Serif Pro,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    text-align: left;
+    
+
+}
+
+.productDisc{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.inner-footer{
+    margin-top: 20px;
+    padding :0;
+    background-color:black;
+    height: 200px;
+  
+  
+   }
+   .social-links{
+    display:flex;
+    flex-direction: row;
+    margin-left: 600px;
+    
+   }
+   .social-links ul{
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    width:300px;
+    height:30px;
+    
+   }
+  
+  
+   .social-items{
+    list-style:none;
+   }
+   .social-items a{
+    padding:10px 20px;
+    font-size:35px;
+    color:pink;
+    transition: all .25s;
+   }
+   .social-items a:hover{
+    color:white;
+   }
+   .quick-links{
+    display:flex;
+    flex-direction: row;
+    /* width:560px;
+    height:70px; */
+    margin-top: 70px;
+    margin-left: 530px;
+    
+    
+   }
+  
+   .quick-links ul{
+    display:flex;
+    flex-direction: row;
+   }
+  
+   .quick-items{
+    list-style:none;
+  
+   }
+   .quick-items a{
+    text-decoration:none;
+    padding:0px 15px;
+    font-size: 18px;
+    color:white;
+    transition: all .25s;
+   }
+   .quick-items a:hover{
+    color:#6cccc6;
+   }
+   .outer-footer{
+    padding:15px;
+    text-align: center;
+    color:black;
+    font-size:18px;
+    background: color #3f3f3f;
+   }
+  
+  
+ .button{
+    margin-top: 50px;
+    margin-left: 245px;
+ }
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+  

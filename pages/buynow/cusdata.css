@@ -1,0 +1,237 @@
+.container-fluid{
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: large;
+  font-family:  "New York",Iowan Old Style,Apple Garamond,Baskerville,Times New Roman,Droid Serif,Times,Source Serif Pro,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  background-color:black;
+
+  
+}
+
+
+.nav-item .nav-link{
+  color:pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  margin-right: 40px;
+ 
+}
+
+.nav-item:hover{
+  text-decoration: underline 1.5px palevioletred;
+  color: palevioletred;
+  
+}
+
+.formd{
+    
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 750px;
+    border: 1px ;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+
+}
+
+#paybtn{
+
+    margin-left: 320px;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  
+  /* background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%); */
+}
+
+#paymentForm{
+
+margin-left: 400px;
+
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  /* text-transform: uppercase; */
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: black;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: pink;
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.popup{
+    width: 350px;
+    height: 370px;
+    padding: 30px 20px;
+    margin-left: 40px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+    
+}
+
+.popup .icon{
+    margin:5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+
+}
+
+.popup.active{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transform: transform 300ms cubic-bazier(0.18,0.89,0.43,1.19);
+
+}
+
+.popup .icon i.fa{
+    font-size: 30px;
+    color: #34f234;
+}
+
+.popup .title{
+    margin: 5px 5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popup .description{
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popup .dismiss-btn{
+    margin-top: 15px;
+}
+
+.popup .dismiss-btn button{
+    padding: 10px 20px;
+    background: #111;
+    color: #f5f5f5;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover{
+    color: #111;
+    background: #f5f5f5;
+}
+
+.error{
+
+    color: red;
+
+}

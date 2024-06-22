@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title</title>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="./CSS/products.css"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<!--ICON-->
+<link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="grt">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">N+B</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./story.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contactus.html">Contact Us</a>
+            </li>
+              <!-- <a class="nav-link" href="#">products</a>
+              <a class="nav-link" href="#">our story</a>
+              <a class="nav-link disabled" aria-disabled="true">contact us</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div>Product Page</div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/BodyButter2_900x.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Whipped Body Butter | Vitamin E & Argan Oil Extracts - Ultra Hydrating - No Sticky Residue
+            </h5>
+              <p class="card-text">Our N+B Body Butter is silky velvety, lightweight, and ultra hydrating. It replenishes and renews and revitalizes skin.</p>
+              <div class="price">Rs.3000.00</div>
+              <button id="productbtn1" type="button" class="btn btn-dark">Buy Now</button>
+              
+
+              <script>
+                // Get a reference to the button element
+                const productbtn1 = document.getElementById("productbtn1");
+            
+                // Add a click event listener to the button
+                productbtn1.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./product1.html";   
+                });
+            </script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/h_900x.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Moisturizing Body Wash for Men & Women | Body Skin Care Made w/ Hydrating Argan Oil & Vitamin E</h5>
+              <p class="card-text">Our N+B Body Wash is gentle and great for daily use and will leave your skin silky to the touch and hydrated. Its key ingredient, Argan Oil, is a natural oil from Argania Spinosa and Endemic Tree of South West Morocco that is cold-pressed with a high content of unsaturated Fatty Acids and VITAMIN E. </p>
+              <div class="price">Rs.3000.00</div>
+              <button id="productbtn2" type="button" class="btn btn-dark">Buy Now</button>
+
+              <script>
+                // Get a reference to the button element
+                const productbtn2 = document.getElementById("productbtn2");
+            
+                // Add a click event listener to the button
+                productbtn2.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./product2.html";   
+                });
+            </script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/conditioner.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Leave-In Conditioner & Detangler Spray | Curly, Straight, All Hair Types</h5>
+              <p class="card-text">Our N+B Leave-in Conditioner is the best leave-in for all types, length and texture of hair with over 25 benefits!</p>
+              <div class="price">Rs.3000.00</div>
+              <button id="productbtn3" type="button" class="btn btn-dark">Buy Now</button>
+              <script>
+                // Get a reference to the button element
+                const productbtn3 = document.getElementById("productbtn3");
+            
+                // Add a click event listener to the button
+                productbtn3.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./product3.html";   
+                });
+            </script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/BodyScrub1_900x.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sugar Body Scrub | Invigorates and Brightens Skin - Oil Free - Removes impurities</h5>
+              <p class="card-text">Oil free invigorating body scrub removes impurities leaving skin soft, moisturized and brightened. Formulated with Pomegranate Seed Extract is rich in antioxidants and Punic acid which is a powerful anti-inflammatory, and antioxidant agent.</p>
+              <div class="price">Rs.3000.00</div>
+              <button id="productbtn4" type="button" class="btn btn-dark">Buy Now</button>
+              <script>
+                // Get a reference to the button element
+                const productbtn4 = document.getElementById("productbtn4");
+            
+                // Add a click event listener to the button
+                productbtn4.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./product4.html";   
+                });
+            </script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="./images/EmpowerLotion_900x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Empower Lotion | Non-Sticky, Moisturizing, Quick Absorption, Softens & Smoothens</h5>
+                <p class="card-text">Our body lotion is formulated with Amala Extract and packed with amino acids, proteins, vitamin C and minerals. Perfect for daily use.</p>
+                <div class="price">Rs.3000.00</div>
+                <button id="productbtn5" type="button" class="btn btn-dark">Buy Now</button>
+                <script>
+                  // Get a reference to the button element
+                  const productbtn5 = document.getElementById("productbtn5");
+              
+                  // Add a click event listener to the button
+                  productbtn5.addEventListener("click", function() {
+                      // Redirect to the "products.html" page
+                      window.location.href = "./product5.html";   
+                  });
+              </script>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/FearlessLotion_900x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fearless Body Shimmer Lotion | Non-Sticky, Moisturizing, Body Highlighter</h5>
+                <p class="card-text">Our body shimmer lotion shimmer is perfect for day or night! Formulated with Amala Extract, it's packed with amino acids, proteins, vitamin C and minerals.</p>
+                <div class="price">Rs.3000.00</div>
+                <button id="productbtn6" type="button" class="btn btn-dark">Buy Now</button>
+                <script>
+                  // Get a reference to the button element
+                  const productbtn6 = document.getElementById("productbtn6");
+              
+                  // Add a click event listener to the button
+                  productbtn6.addEventListener("click", function() {
+                      // Redirect to the "products.html" page
+                      window.location.href = "./product6.html";   
+                  });
+              </script>
+
+              </div>
+            </div>
+          </div>
+      </div>
+     
+      <footer class="footer">
+        <div class="inner-footer">
+          <div class="social-links">
+            <ul>
+             
+              <li class="social-items"><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li class="social-items"><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li class="social-items"><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li class="social-items"><a href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="quick-links">
+            <ul>
+              <li class="quick-items"><a href="#">Home</a></li>
+              <li class="quick-items"><a href="#">All products</a></li>
+              <li class="quick-items"><a href="#">Privacy policy</a></li>
+              <li class="quick-items"><a href="#">Shipping policy</a></li>
+              <li class="quick-items"><a href="#">Refunds and returns</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="outer-footer">
+          copyright &copy; skin care pro.All Rights Reserved.
+        </div>
+      </footer>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

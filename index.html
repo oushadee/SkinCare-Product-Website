@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title</title>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="./CSS/style.css"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<!-- ICON-->
+<link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="grt">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">N+B </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./story.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contactus.html">Contact Us</a>
+            </li>
+            <div class="Registration"></div>
+           <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="./registration.html"> Registration</a>
+           </li>
+
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    
+      
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/lip.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-heading">Be Bold <br>Be Beautiful <br> Be You</h3>
+              <p class="carousel-desc">A line of premium, professionally curated skincare products for those want real results, without all the junk.</p>
+              <br>
+              <button id="navigateButton" class="myButton">FIND YOUR MATCH</button>
+
+              <script>
+                // Get a reference to the button element
+                const navigateButton = document.getElementById("navigateButton");
+            
+                // Add a click event listener to the button
+                navigateButton.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./products.html";
+                });
+            </script>
+            
+
+              
+             
+            </div>
+            <!-- <button class="overlay-button">FIND YOUR MATCH</button>     -->
+
+
+          </div>
+          <div class="carousel-item">
+            <img src="./images/flatlay-makeup-accessories-beauty.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-heading">Be Bold <br>Be Beautiful <br> Be You</h3>
+              <p class="carousel-desc">A line of premium, professionally curated skincare products for those want real results, without all the junk.</p>
+              <button id="navigateButton1" class="myButton ">FIND YOUR MATCH</button>
+              <script>
+                // Get a reference to the button element
+                const navigateButton1 = document.getElementById("navigateButton1");
+            
+                // Add a click event listener to the button
+                navigateButton1.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./products.html";
+                });
+            </script>
+            
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/flatlay-makeup-beauty-cosmetics.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-heading">Be Bold <br>Be Beautiful <br> Be You</h3>
+              <p class="carousel-desc">A line of premium, professionally curated skincare products for those want real results, without all the junk.</p>
+              <button id="navigateButton2" class="myButton ">FIND YOUR MATCH</button>
+              <script>
+                // Get a reference to the button element
+                const navigateButton2 = document.getElementById("navigateButton2");
+            
+                // Add a click event listener to the button
+                navigateButton2.addEventListener("click", function() {
+                    // Redirect to the "products.html" page
+                    window.location.href = "./products.html";
+                });
+            </script>
+            
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+      <div class="images">
+        <div class="container">
+        <div class="circle-image">
+          <img src="./images/dryskin.jpeg" alt="Rectangular Image">
+       </div>
+       <div>
+        <h3 class="dryskin">no more Dry Skin!</h3>
+          <p>our products Formulated with <b>anti aging &<br> skin lightening actives</b> to counter the</br> early aging signs caused by dryness.</p>
+        </div>
+       </div>
+      
+      <div class="container">
+      <div class="circle-image2">
+        <img src="" alt="Rectangular Image">
+      </div>
+      <div>
+        <h3 class="skincancer">say bye to Skin<br> Cancer!</h3>
+        <p>our products contain <b>aloe vera, tea tree oil and  vitamin E </b>which will treat skin cancer and provide natural glow.</p></br></br></br>
+      </div>
+    </div>
+    
+    
+        <div class="container">
+        <div class="circle-image1">
+          <img src="" alt="Rectangular Image">
+        </div>
+
+        <div>
+          <h3 class="redness">no more Redness <br> and Irritation!</h3>
+          <p>our salon quality products are <b> ultra mild<br> and contain SLES free surfactants </b> which<br> will prevent 
+            your skin from redness and <br> irritation.</p></br></br></br>
+            
+        </div>
+      </div>
+
+      </div>
+
+      <div>
+        <button id="shop" class="myButton2">SHOP NOW</button>
+        <script>
+          // Get a reference to the button element
+          const shopButton = document.getElementById("shop");
+      
+          // Add a click event listener to the button
+          shopButton.addEventListener("click", function() {
+              // Redirect to the "products.html" page
+              window.location.href = "./products.html";
+          });
+      </script>
+        </div>
+
+        <br>
+
+      <div class="desc-container">
+        <div>
+          <h1 class="description">HAPPY HEALTHY SKINCARE</h1>
+          <h2 class="description1">skin care products made with one person in mind, you.</h2><br>
+          <h3 class="description2">We’re sick of it. Skin care products that make us dull, dry and red. skincare products that make us feel oily
+             and unclean. Even products that have ingredients we can’t pronounce that aren’t even good for you.That’s why we created this 
+            unique line of healthy skincare products that help your skin more than hurt it,
+             while giving you that soft, supple, and just glowy look.For Bold & Beautiful women, our professional formulations give 
+             you all of the results you need, without the junk that most skincare brands put in.</h3>
+          </div>
+          </div>
+
+
+          
+        <div class="productTitle">MEET OUR BEST SELLER</div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="background-image: url('');">
+          <div class="col">
+            <div class="card">
+              <img src="./images/BodyButter2_900x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whipped Body Butter | Vitamin E & Argan Oil Extracts - Ultra Hydrating - No Sticky Residue<br><br><b>Rs.2890.00</b></h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                <div class="buttonn">
+                  <button id="bestproduct" type="button" class="btn btn-outline-secondary" id="buttonId"><a href="./products.html"></a>Buy Now</button>
+                  <script>
+                    // Get a reference to the button element
+                    const bestproduct = document.getElementById("bestproduct");
+                
+                    // Add a click event listener to the button
+                    bestproduct.addEventListener("click", function() {
+                        // Redirect to the "products.html" page
+                        window.location.href = "./cusdata.html";   
+                    });
+                </script>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./images/h_900x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sugar Body Scrub | Invigorates and Brightens Skin - Oil Free - Removes impurities<br><br><b>Rs.2890.00</b></h5>
+                <div class="buttonn">
+                  <button id="bestproduct1" type="button" class="btn btn-outline-secondary" id="buttonId">Buy Now</button>
+                  <script>
+                    // Get a reference to the button element
+                    const bestproduct1 = document.getElementById("bestproduct1");
+                
+                    // Add a click event listener to the button
+                    bestproduct1.addEventListener("click", function() {
+                        // Redirect to the "products.html" page
+                        window.location.href = "./cusdata.html";   
+                    });
+                </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./images/BodyScrub1_900x.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sugar Body Scrub | Invigorates and Brightens Skin - Oil Free - Removes impurities<br><br><b>Rs.2890.00</b></h5>
+                <div class="buttonn">
+                  <button id="bestproduct2" type="button" class="btn btn-outline-secondary" id="buttonId">Buy Now</button>
+                  <script>
+                    // Get a reference to the button element
+                    const bestproduct2 = document.getElementById("bestproduct2");
+                
+                    // Add a click event listener to the button
+                    bestproduct2.addEventListener("click", function() {
+                        // Redirect to the "products.html" page
+                        window.location.href = "./cusdata.html";   
+                    });
+                </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      
+
+
+     
+      <div><h1 class="us">WHY PEOPLE LOVE US</h1></div>
+
+      <div class="image-container1">
+        <div class="card-cont">
+          <img src="./images/whyus2.jpg"alt="Image 1" class="image">
+          <h5 style="text-align: center;">All products are made in srilanka</h5>
+        </div>
+        
+        <div class="card-cont">
+          <img src="./images/whyus.jpg" alt="Image 2" class="image">
+          <h5 style="text-align: center;">Only the highest quality products</h5>
+        </div>
+        
+        <div class="card-cont">
+          <img src="./images/whyus1.jpg" alt="Image 3" class="image">
+          <h5 style="text-align: center;">Never tested on animals</h5>
+        </div>
+        
+    </div>
+  <footer class="footer">
+    <div class="inner-footer">
+      <div class="social-links">
+        <ul>
+         
+          <li class="social-items"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="social-items"><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="social-items"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="social-items"><a href="#"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <ul>
+          <li class="quick-items"><a href="#">Home</a></li>
+          <li class="quick-items"><a href="#">All products</a></li>
+          <li class="quick-items"><a href="#">Privacy policy</a></li>
+          <li class="quick-items"><a href="#">Shipping policy</a></li>
+          <li class="quick-items"><a href="#">Refunds and returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="outer-footer">
+      copyright &copy; skin care pro.All Rights Reserved.
+    </div>
+  </footer>
+    
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title</title>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="./CSS/cusdata.css"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<!-- ICON-->
+<link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="grt">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./story.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contactus.html">Contact Us</a>
+            </li>
+          
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="form-f">
+        <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Phone number</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">quantity</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="quantity">
+                </div>
+            
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+          </div>
+      </div> -->
+
+      <div class="formd" id="paymentForm1">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                <span id="firstNameError" class="error"></span>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                <span id="lastNameError" class="error"></span>
+              </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+              <span id="emailError" class="error"></span>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+              <span id="phonenumberError" class="error"></span>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" placeholder="Address">
+              <span id="addressError" class="error"></span>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <!-- <span id="firstNameError" class="error"></span> -->
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="City">
+              <span id="cityError" class="error"></span>
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+              <span id="zipError" class="error"></span>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <div>Payment Options</div>
+
+                    <label>
+                        <input type="radio" name="paymentMethod" value="cash"> Cash
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="card"> Card Payment
+                    </label>
+                    <br>
+                </div>
+              </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+               <button id="paybtn" type="button" class="btn btn-dark">Pay Now</button>
+            </div>
+          </form>
+        </div>
+      
+      <!-- <form id="paymentForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <span id="firstNameError" class="error"></span>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <span id="lastNameError" class="error"></span>
+        <br>
+        <label for="address">address:</label>
+        <input type="text" id="address" name="address" required>
+        <span id="addressError" class="error"></span>
+        <br>
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+        <br>
+
+        <label for="phonenumber">phone number:</label>
+        <input type="text" id="phone number" name="phonenumber" required>
+        <span id="phonenumberError" class="error"></span>
+        <br>
+
+        <label for="city">address:</label>
+        <input type="text" id="city" name="city" required>
+        <span id="cityError" class="error"></span>
+        <br>
+
+        <form id="phoneForm">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+            <span id="phoneError" class="error"></span>
+            <br>
+            <button type="submit">Submit</button>
+        </form> -->
+        
+
+        <!-- validate first name -->
+
+        <!-- validate first name -->
+
+<script>
+  const paymentForm1 = document.getElementById('paymentForm1');
+  const firstNameField = document.getElementById('firstName');
+  const firstNameError = document.getElementById('firstNameError');
+  const paybtn1 = document.getElementById('paybtn');
+
+  paybtn1.addEventListener('click', function (event) {
+      let isValid = true;
+
+      // Validate first name
+      if (firstNameField.value.trim() === '') {
+          isValid = false;
+          firstNameError.textContent = 'First name is required';
+      } else {
+          firstNameError.textContent = ''; // Clear error message
+      }
+
+      if (!isValid) {
+          event.preventDefault(); // Prevent form submission if there are validation errors
+      }
+  });
+</script>
+
+<!-- Your existing code for handling payment options and card payment form -->
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionA = document.querySelector('input[value="cash"]');
+  const cardOptionA = document.querySelector('input[value="card"]');
+  const paymentFormA= document.getElementById('paymentForm');
+  const successMessageA = document.getElementById('successMessage');
+  const paybtnA = document.getElementById('paybtn');
+  const cardPaymentFormA = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnA.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (firstNameField.value.trim() === '') {
+          alert('Please fill in the first name before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionA.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormA.style.display = 'none';
+          successMessageA.style.display = 'block';
+      } else if (cardOptionA.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormA.style.display = 'block';
+          successMessageA.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormA.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+
+
+
+        <!-- validate last name -->
+        <script>
+        const FormLname = document.getElementById('paymentForm1');
+const lastNameField = document.getElementById('lastName');
+const lastNameError = document.getElementById('lastNameError');
+const paybtn2 = document.getElementById('paybtn');
+
+paybtn2.addEventListener('click', function (event) {
+    let isValid = true;
+
+    // Validate last name
+    if (lastNameField.value.trim() === '') {
+        isValid = false;
+        lastNameError.textContent = 'last name is required';
+    } else {
+        lastNameError.textContent = ''; // Clear error message
+    }
+
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if there are validation errors
+    }
+});
+
+</script>
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionB = document.querySelector('input[value="cash"]');
+  const cardOptionB = document.querySelector('input[value="card"]');
+  const paymentFormB= document.getElementById('paymentForm');
+  const successMessageB = document.getElementById('successMessage');
+  const paybtnB = document.getElementById('paybtn');
+  const cardPaymentFormB = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnA.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (lastNameField.value.trim() === '') {
+          alert('Please fill in the last name before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionB.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormB.style.display = 'none';
+          successMessageB.style.display = 'block';
+      } else if (cardOptionB.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormB.style.display = 'block';
+          successMessageB.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormB.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+  <!-- validate address -->
+
+  <script>
+  const FormAddress = document.getElementById('paymentForm1');
+const addressField = document.getElementById('inputAddress');
+const addressError = document.getElementById('addressError');
+const paybtn3 = document.getElementById('paybtn');
+
+paybtn3.addEventListener('click', function (event) {
+    let isValid = true;
+
+    // Validate first name
+    if (addressField.value.trim() === '') {
+        isValid = false;
+        addressError.textContent = 'address is required';
+    } else {
+        firstNameError.textContent = ''; // Clear error message
+    }
+
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if there are validation errors
+    }
+});
+
+</script>
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionC = document.querySelector('input[value="cash"]');
+  const cardOptionC = document.querySelector('input[value="card"]');
+  const paymentFormC= document.getElementById('paymentForm');
+  const successMessageC = document.getElementById('successMessage');
+  const paybtnC = document.getElementById('paybtn');
+  const cardPaymentFormC = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnC.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (addressField.value.trim() === '') {
+          alert('Please fill in the address field before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionC.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormC.style.display = 'none';
+          successMessageC.style.display = 'block';
+      } else if (cardOptionC.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormC.style.display = 'block';
+          successMessageC.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormC.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+
+// <!-- validate city -->
+<script>
+const Formcity = document.getElementById('paymentForm1');
+const cityField = document.getElementById('inputCity');
+const cityError = document.getElementById('cityError');
+const paybtn4 = document.getElementById('paybtn');
+
+paybtn4.addEventListener('click', function (event) {
+    let isValid = true;
+
+    // Validate last name
+    if (cityField.value.trim() === '') {
+        isValid = false;
+        cityError.textContent = 'city is required';
+    } else {
+        cityError.textContent = ''; // Clear error message
+    }
+
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if there are validation errors
+    }
+});
+</script>
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionD = document.querySelector('input[value="cash"]');
+  const cardOptionD = document.querySelector('input[value="card"]');
+  const paymentFormD= document.getElementById('paymentForm');
+  const successMessageD = document.getElementById('successMessage');
+  const paybtnD = document.getElementById('paybtn');
+  const cardPaymentFormD = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnD.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (cityField.value.trim() === '') {
+          alert('Please fill in the city before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionD.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormD.style.display = 'none';
+          successMessageD.style.display = 'block';
+      } else if (cardOptionD.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormD.style.display = 'block';
+          successMessageD.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormD.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+        
+
+
+
+        // <!-- Validate email -->
+<script>     
+const emailField = document.getElementById('email');
+const emailError = document.getElementById('emailError');
+const paybtnemail = document.getElementById('paybtn');
+
+paybtnemail.addEventListener('click', function (event) {
+    let isValid = true;
+    const email = emailField.value.trim();
+
+const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+
+if (!emailRegex.test(email)) {
+    isValid = false;
+    emailError.textContent = 'Invalid email address';
+} else {
+    emailError.textContent = '';
+}
+});
+
+</script>
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionE = document.querySelector('input[value="cash"]');
+  const cardOptionE = document.querySelector('input[value="card"]');
+  const paymentFormE= document.getElementById('paymentForm');
+  const successMessageE = document.getElementById('successMessage');
+  const paybtnE = document.getElementById('paybtn');
+  const cardPaymentFormE = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnA.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (emailField.value.trim() === '') {
+          alert('Please fill in the email before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionE.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormE.style.display = 'none';
+          successMessageE.style.display = 'block';
+      } else if (cardOptionE.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormE.style.display = 'block';
+          successMessageE.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormE.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+ 
+ <!-- validate phone number -->
+<script>
+
+const phoneNumberField = document.getElementById('phone');
+const phoneError = document.getElementById('phonenumberError');
+const paybtn6 = document.getElementById('paybtn');
+
+paybtn6.addEventListener('click', function (event) {
+    let isValid = true;
+    const phoneNumber = phoneNumberField.value.trim();
+
+    // Regular expression for a simple example of a valid phone number (10 digits)
+    const phoneRegex = /^\d{10}$/;
+
+    if (!phoneRegex.test(phoneNumber)) {
+        isValid = false;
+        phoneError.textContent = 'Please enter a valid 10-digit phone number';
+    } else {
+        phoneError.textContent = ''; // Clear error message
+    }
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if there are validation errors
+    }
+
+    // const inputFields = paymentForm1.querySelectorAll('input, textarea');
+    //     inputFields.forEach((field) => {
+    //         field.addEventListener('focus', function () {
+    //             const errorElement = document.getElementById(field.id + 'Error');
+    //             errorElement.textContent = '';
+    //         });
+});
+</script>
+
+<script>
+  // JavaScript code for handling user interactions
+  const cashOptionF = document.querySelector('input[value="cash"]');
+  const cardOptionF = document.querySelector('input[value="card"]');
+  const paymentFormF= document.getElementById('paymentForm');
+  const successMessageF = document.getElementById('successMessage');
+  const paybtnF = document.getElementById('paybtn');
+  const cardPaymentFormF = document.getElementById('cardPaymentForm');
+
+  // Add an event listener to the "Pay" button
+  paybtnF.addEventListener('click', function() {
+      // Check if the first name field is valid before proceeding
+      if (phoneNumberField.value.trim() === '') {
+          alert('Please fill in the phone number before proceeding.');
+          return; // Stop execution if the first name is not valid
+      }
+
+      if (cashOptionF.checked) {
+          // If "Cash" option is selected, show the success message
+          paymentFormF.style.display = 'none';
+          successMessageF.style.display = 'block';
+      } else if (cardOptionF.checked) {
+          // If "Card Payment" option is selected, show the card payment form
+          paymentFormF.style.display = 'block';
+          successMessageF.style.display = 'none';
+      }
+  });
+
+  // Prevent the form from submitting (you will handle card payment logic separately)
+  cardPaymentFormF.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Here, you can add JavaScript code to handle card payment submission
+      // You might want to send the card details to a payment gateway for processing
+      // Upon successful payment, you can display a success message.
+      // This example does not include actual payment processing logic.
+  });
+</script>
+
+        <!-- Add similar elements for last name, email, phone number, and address -->
+        
+       
+
+    
+
+
+    <div class="container" id="paymentForm" style="display: none;">
+
+        <form action="" id="cardPaymentForm">
+    
+            <div class="row">
+    
+             <div class="col">
+    
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="/images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="mr. john deo">
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="january">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="proceed to checkout" class="submit-btn" id="open-popup-btn">
+    
+        </form>
+    
+    </div>
+
+    <script>
+
+const paymentForm2= document.getElementById('paymentForm');
+const cardNumberField = document.getElementById('cardNumber');
+const expirationDateField = document.getElementById('expirationDate');
+const cvvField = document.getElementById('cvv');
+const cardNumberError = document.getElementById('cardNumberError');
+const expirationDateError = document.getElementById('expirationDateError');
+const cvvError = document.getElementById('cvvError');
+
+paymentForm.addEventListener('submit', function (event) {
+    let isValid = true;
+
+    // Card number validation
+    const cardNumberValue = cardNumberField.value.trim();
+    if (!isValidCardNumber(cardNumberValue)) {
+        isValid = false;
+        cardNumberError.textContent = 'Invalid card number';
+    } else {
+        cardNumberError.textContent = '';
+    }
+
+    // Expiration date validation
+    const expirationDateValue = expirationDateField.value.trim();
+    if (!isValidExpirationDate(expirationDateValue)) {
+        isValid = false;
+        expirationDateError.textContent = 'Invalid expiration date (MM/YYYY)';
+    } else {
+        expirationDateError.textContent = '';
+    }
+
+    // CVV validation
+    const cvvValue = cvvField.value.trim();
+    if (!isValidCVV(cvvValue)) {
+        isValid = false;
+        cvvError.textContent = 'Invalid CVV';
+    } else {
+        cvvError.textContent = '';
+    }
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if there are validation errors
+    }
+});
+
+// Card number validation function (simplified)
+function isValidCardNumber(cardNumber) {
+    return /^\d{16}$/.test(cardNumber); // Check if card number has 16 digits
+}
+
+// Expiration date validation function (simplified)
+function isValidExpirationDate(expirationDate) {
+    return /^\d{2}\/\d{4}$/.test(expirationDate); // Check if MM/YYYY format
+}
+
+// CVV validation function (simplified)
+function isValidCVV(cvv) {
+    return /^\d{3}$/.test(cvv); // Check if CVV has 3 digits
+}
+</script>
+
+
+
+
+    <div id="successMessage" style="display: none;">
+        <!-- Success message goes here -->
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your payment.</p>
+    </div>
+
+
+    
+
+
+   
+
+
+ <div class="popup center">
+    <div class="icon">
+        <i class="fa fa-check"></i>
+    </div>
+    <div class="title">
+        Success!!
+    </div>
+    <div class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo ratione blanditiis repellendus, eveniet totam facilis. Suscipit, ex sunt alias in voluptatum ea non libero molestias perferendis omnis et. Quo.
+    </div>
+    <div class="dismiss-btn">
+        <button id="dismiss-popup-btn">
+            Dismiss
+        </button>
+    </div>
+ </div>
+ 
+
+ <script>
+    document.getElementById("open-popup-btn").addEventListener("click",function(){
+        document.getElementsByClassName("popup")[0].classList.add("active")
+    });
+
+    document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+        document.getElementsByClassName("popup")[0].classList.remove("active")
+    });
+ </script>
+
+    
+
+</body>
+
+
+
+
+
+      
+      

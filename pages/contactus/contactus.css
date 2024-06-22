@@ -1,0 +1,138 @@
+
+/* Custom CSS */
+/* .list-unstyled {
+    padding-left: 0;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .list-unstyled li a {
+    color: #333; /* Change the color as needed */
+  /* } */
+  
+  /* .list-unstyled li a:hover {
+    color: #007bff; /* Change the hover color as needed */
+  /* } */
+  
+  .carousel-inner{
+    height: 650px;
+  }
+  
+  .container-fluid{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: large;
+    font-family:  "New York",Iowan Old Style,Apple Garamond,Baskerville,Times New Roman,Droid Serif,Times,Source Serif Pro,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    background-color:black;
+
+    
+}
+
+
+.nav-item .nav-link{
+    color:pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    margin-right: 40px;
+   
+}
+
+.nav-item:hover{
+    text-decoration: underline 1.5px palevioletred;
+    color: palevioletred;
+    
+}
+   
+ * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box
+   
+ }
+ .card-body{
+    background-image:url("\images\spa-cosmetic.jpg");
+    
+ }
+ .inner-footer{
+  margin-top: 20px;
+  padding :0;
+  background-color:black;
+  height: 200px;
+
+
+ }
+ .social-links{
+  display:flex;
+  flex-direction: row;
+  
+ }
+ .social-links ul{
+  padding:20px;
+  display:flex;
+  flex-direction: row;
+  width:300px;
+  height:30px;
+  margin:auto;
+ }
+
+
+ .social-items{
+  list-style:none;
+ }
+ .social-items a{
+  padding:10px 20px;
+  font-size:35px;
+  color:pink;
+  transition: all .25s;
+ }
+ .social-items a:hover{
+  color:white;
+ }
+ .quick-links{
+  display:flex;
+  flex-direction: row;
+  /* width:560px;
+  height:70px; */
+  margin-top: 70px;
+  margin-left: 255px;
+  
+  
+ }
+
+ .quick-links ul{
+  display:flex;
+  flex-direction: row;
+ }
+
+ .quick-items{
+  list-style:none;
+
+ }
+ .quick-items a{
+  text-decoration:none;
+  padding:0px 15px;
+  font-size: 18px;
+  color:white;
+  transition: all .25s;
+ }
+ .quick-items a:hover{
+  color:#6cccc6;
+ }
+ .outer-footer{
+  padding:15px;
+  text-align: center;
+  color:black;
+  font-size:18px;
+  background: color #3f3f3f;
+ }
+ .button1{
+  margin-left: 250px;
+  margin-bottom: 70px;
+ }
+ 
